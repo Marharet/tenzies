@@ -1,6 +1,6 @@
 # Learning React
 
-This project was created to improve my skills in React JS. It is react-web-game (Roll until all dice are the same. Click each die to freeze it at its current value between rolls). You can reach this page by
+This project was created to improve my skills in React JS. It is react-web-game (Roll until all dice are the same. Click each die to freeze it at its current value between rolls). You can reach this page by https://marharet.github.io/tenzies/
 
 ## Available Scripts
 
