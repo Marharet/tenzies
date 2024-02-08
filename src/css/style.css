@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+body {
+    background-color: #4f7892;
+    font-family: 'Poppins', sans-serif;    
+    padding: 20px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    height: 100vh;
+}
+
+main {
+    height: 450px;
+    max-width: 800px;
+    background-color: whitesmoke;
+    padding: 1rem;
+    margin-inline: auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h1 {
+    font-size: 6vh;
+    margin: 0;
+}
+
+p {
+    font-weight: 400;
+    margin: 1.2vh 0 2vh 0;
+    font-size: 2.4vh;
+}
+
+.die-container {
+    display: grid;
+    grid-template: auto auto / repeat(6, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 460px) {
+    .die-container {
+        grid-template: auto auto / repeat(4, 1fr);
+    }    
+}
+
+.die-face {
+    grid-row: span 1;
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 3.57447px 3.57447px rgba(0, 0, 0, 0.1);
+}
+
+.die-num {
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+.roll-dice {
+    height: 6vh;
+    width: 25vh;
+    border: none;
+    border-radius: 6px;
+    background-color: #3353a3;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.18);
+}
+
+.roll-dice:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.roll-dice:focus {
+    outline: none;
+}
+
+.score-board{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40vh;
+}
